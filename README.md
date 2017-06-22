@@ -98,4 +98,5 @@ Thanks to [Michal Gajda](https://social.technet.microsoft.com/profile/michalgajd
 
 Sincerely 
 [Janus Kamp Hansen](https://social.technet.microsoft.com/Profile/Janus%20Kamp%20Hansen)
+
 [Thiago Lunardi](https://github.com/thiagolunardi)
