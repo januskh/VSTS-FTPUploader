@@ -1,14 +1,14 @@
 {
-    "id": "a0bc5f75-8bfd-476a-8f4c-30356c116fdc",
-    "name": "FTPUploaderTL",
-    "friendlyName": "FTP Uploader by TL",
+"id": "9B5EF860-D1EA-4D6E-9446-32487C223E54",
+    "name": "FTPUploader",
+    "friendlyName": "FTP Uploader",
     "description": "For uploading files using FTP protocol.",
     "category": "Utility",
-    "author": "thiagolunardi",
+    "author": "januskamphansen",
     "version": {
         "Major": 1,
         "Minor": 0,
-        "Patch": 24 
+        "Patch": 25 
     },
     "groups": [
         {
@@ -73,7 +73,7 @@
             "label": "Ignore Unchanged Files",
             "defaultValue": "false",
             "required": false,
-            "helpMarkDown": "Ignore files with same size and modification date.",
+            "helpMarkDown": "Ignore files with same size and older date.",
             "groupName": "advanced"
         },        
         {
