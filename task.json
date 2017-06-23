@@ -1,5 +1,5 @@
 {
-"id": "9B5EF860-D1EA-4D6E-9446-32487C223E54",
+    "id": "9B5EF860-D1EA-4D6E-9446-32487C223E54",
     "name": "FTPUploader",
     "friendlyName": "FTP Uploader",
     "description": "For uploading files using FTP protocol.",
