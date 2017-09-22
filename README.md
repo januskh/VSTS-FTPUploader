@@ -20,7 +20,7 @@ The task is based on the [PowerShell FTP Client Module](https://gallery.technet.
 ## Change Log
 
 Version: 1.0.27 - 22th of September 2017
- - Added 'Ignore unchanged files' feature.
+ - Added 'Ignore unchanged files' feature. - Thanks to Thiago Lunardi http://thiagolunardi.net/
 
 Version: 1.0.26 - 22nd of September 2017
 - Exclude filtering adjusted based on Justin Mangum suggestion. Thank you Justin.
