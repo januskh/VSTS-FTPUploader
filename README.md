@@ -1,11 +1,9 @@
-# VSTS-FTPUploader
-Visual Studio Team Services FTP Uploader - For uploading files using FTP protocol.
-
 # FTP Uploader
 
 This utility task can help you deploy to an IIS ftp server or alike. It uses PowerShell to generate the list of files that you may want to upload to an FTP server.
 
 The task is based on the [PowerShell FTP Client Module](https://gallery.technet.microsoft.com/scriptcenter/PowerShell-FTP-Client-db6fe0cb), developed by [Michal Gajda](https://social.technet.microsoft.com/profile/michalgajda/), with small adjustments.
+
 
 
 ## Features
@@ -18,6 +16,9 @@ The task is based on the [PowerShell FTP Client Module](https://gallery.technet.
  Deletes all the existing files on the FTP server before uploading.
 
 ## Change Log
+Version: 1.0.26 - 22nd of September 2017
+- Exclude filtering adjusted based on Justin Mangum suggestion. Thank you Justin.
+
 Version: 1.0.24 - 8th of Febuary 2016
 - Parameter bug fix in connection with the new 'Use binary' feature.
 
@@ -81,7 +82,10 @@ Uploading without this checked will overwrite existing files on the 'Remote Path
 - **Publish only deployment files** 
 This option will prevent not used deployment files to be uploaded. Folders: "/Obj/", "My Project" and file-types: *.vb, *.cs, *.vbproj, *.csproj, *.user, *.vspscc are not deployed.
 
+## Contribute
 
+If you experiance issues, and what to help, please check out the GitHub repo, clone and make a pull-request. The GitHub repo is located here:
+https://github.com/januskh/VSTS-FTPUploader
  
 Enjoy.
 
