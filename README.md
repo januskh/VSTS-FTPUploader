@@ -14,11 +14,17 @@ The task is based on the [PowerShell FTP Client Module](https://gallery.technet.
  Certain files and folders are then excluded like *.vb and *.cs and more.
  - Delete old files
  Deletes all the existing files on the FTP server before uploading.
+ - Ignore unchanged files
+ Ignore and don't upload files with same size and older modification timestamp
 
 ## Change Log
+
+Version: 1.0.27 - 22th of September 2017
+ - Added 'Ignore unchanged files' feature.
+
 Version: 1.0.26 - 22nd of September 2017
 - Exclude filtering adjusted based on Justin Mangum suggestion. Thank you Justin.
-
+ 
 Version: 1.0.24 - 8th of Febuary 2016
 - Parameter bug fix in connection with the new 'Use binary' feature.
 
@@ -68,6 +74,9 @@ The folder is root based and must start with slash.
 - **Use binary** (Default: False)
 If checked, files and folders are transferred using Binary-protocol.
 
+- **Ignore unchanged files** (Default: False)
+If checked, files and folders with same size and older modification timestamp will not be uploaded.
+
 - **Exclude files**
 If there are files or filetypes that you do not want to deploy, you can specify them in the field. Default is: '*.vb','*.vbproj'
 ```
@@ -93,4 +102,3 @@ Thanks to [Michal Gajda](https://social.technet.microsoft.com/profile/michalgajd
 
 Sincerely 
 [Janus Kamp Hansen](https://social.technet.microsoft.com/Profile/Janus%20Kamp%20Hansen)
-

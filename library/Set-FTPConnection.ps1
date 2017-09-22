@@ -28,6 +28,9 @@
 	.PARAMETER UsePassive
 	    Behavior of a client application's data transfer process. 
 
+	.PARAMETER Timeout
+		Sets the length of time, in milliseconds, before the request times out.
+	
 	.PARAMETER Session
 	    Specifies a friendly name for the ftp session. Default session name is 'DefaultFTPSession'.
 	
@@ -63,7 +66,8 @@
 		[Switch]$KeepAlive = $False,
 		[Switch]$UseBinary = $False,
 		[Switch]$UsePassive = $False,
-		[String]$Session = "DefaultFTPSession"
+		[String]$Session = "DefaultFTPSession",
+		[Int]$Timeout = 5000
 	)
 	
 	Begin
@@ -91,6 +95,7 @@
 			$Request.KeepAlive = $KeepAlive
 			$Request.UseBinary = $UseBinary
 			$Request.UsePassive = $UsePassive
+			$Request.Timeout = $Timeout
 			$Request | Add-Member -MemberType NoteProperty -Name ignoreCert -Value $ignoreCert
 			$Request | Add-Member -MemberType NoteProperty -Name Session -Value $Session
 			$Request | Add-Member -MemberType NoteProperty -Name StartPath -Value ""

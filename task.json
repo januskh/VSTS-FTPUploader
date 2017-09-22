@@ -8,7 +8,7 @@
     "version": {
         "Major": 1,
         "Minor": 0,
-        "Patch": 24 
+        "Patch": 25 
     },
     "groups": [
         {
@@ -66,7 +66,17 @@
             "required": false,
             "helpMarkDown": "Specifies the data type for file transfers.",
             "groupName": "advanced"
-        },        {
+        },        
+        {
+            "name": "ignoreUnchangedFiles",
+            "type": "boolean",
+            "label": "Ignore Unchanged Files",
+            "defaultValue": "false",
+            "required": false,
+            "helpMarkDown": "Ignore files with same size and older date.",
+            "groupName": "advanced"
+        },        
+        {
             "name": "excludeFilter",
             "type": "string",
             "label": "Exclude files",
